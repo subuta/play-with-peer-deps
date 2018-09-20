@@ -1,0 +1,38 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:server": "babel server --out-dir dist",
+    "serve:server": "node ./server/index.js",
+    "servep:server": "NODE_PATH=./ NODE_ENV=production node ./dist/index.js",
+    "serve:client": "webpack-dev-server"
+  },
+  "dependencies": {
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "esm": "^3.0.83",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "webpack": "^4.19.0",
+    "webpack-chain": "^4.11.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-hot-middleware": "^2.24.0"
+  },
+  "author": "subuta <shunta.3110@gmail.com>",
+  "license": "MIT"
+}
