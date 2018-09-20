@@ -6,6 +6,7 @@
 
   React = React && React.hasOwnProperty('default') ? React['default'] : React;
 
+  console.log(React.from);
   var index = (() => {
     return React.createElement("h1", null, "Hello world!");
   });
